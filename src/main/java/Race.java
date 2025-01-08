@@ -81,7 +81,7 @@ public class Race {
     }
     public Leader getLeader() throws Exception {
         if(leader == null)
-            throw new Exception("Лидер гонки определен. Возможно гонка не была завершена.");
+            throw new Exception("Лидер гонки не определен. Возможно гонка не была завершена.");
         return leader;
     }
 }
