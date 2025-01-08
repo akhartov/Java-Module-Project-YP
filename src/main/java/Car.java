@@ -22,10 +22,11 @@ public class Car {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
+        if (this == o)
+            return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Car hamster = (Car) o;
-        return name.equals(hamster.name);
+        Car car = (Car) o;
+        return name.equals(car.name);
     }
 
     @Override
